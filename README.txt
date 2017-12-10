@@ -1,0 +1,1 @@
+Тук са решенията на задачите от --> https://judge.softuni.bg/Contests/Practice/Index/417#0
