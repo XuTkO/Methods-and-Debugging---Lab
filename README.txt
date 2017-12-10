@@ -1,1 +1,1 @@
-Òóê ñà ðåøåíèÿòà íà çàäà÷èòå îò --> https://judge.softuni.bg/Contests/Practice/Index/417#0
+Ð¢ÑƒÐº ÑÐ° Ñ€ÐµÑˆÐµÐ½Ð¸ÑÑ‚Ð° Ð½Ð° Ð·Ð°Ð´Ð°Ñ‡Ð¸Ñ‚Ðµ --> https://judge.softuni.bg/Contests/Practice/Index/417#0
