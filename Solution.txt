@@ -1,24 +1,21 @@
-
+import java.util.Scanner;
 
 public class Main {
     public static void main(String[] args) {
-        PrintHeader();
-        PrintBody();
-        PrintFooter();
-    }
+        Scanner scanner = new Scanner(System.in);
 
-     static void PrintFooter() {
-         System.out.println("------------------------------");
-         System.out.println("© SoftUni");
-    }
+        int num = Integer.parseInt(scanner.nextLine());
+        PrintSign(num);
 
-    static void PrintHeader(){
-        System.out.println("CASH RECEIPT");
-        System.out.println("------------------------------");
     }
-    static void PrintBody(){
-        System.out.println("Charged to____________________");
-        System.out.println("Received by___________________");
+    static void PrintSign (int num){
+        if (num==0){
+            System.out.println("The number 0 is zero.");
+        } else if (num<0){
+            System.out.println("The number " + num + " is negative." );
+        } else if (num>0){
+            System.out.println("The number " + num + " is positive." );
+        }
     }
 }
 
