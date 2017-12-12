@@ -4,18 +4,26 @@ public class Main {
     public static void main(String[] args) {
         Scanner scanner = new Scanner(System.in);
 
-        int num = Integer.parseInt(scanner.nextLine());
-        PrintSign(num);
+        int n = Integer.parseInt(scanner.nextLine());
+        PrintTriangle(n);
+    }
 
+    static void PrintTriangle(int n) {
+        for (int i = 1; i <=n; i++){
+            PrintLine(i);
     }
-    static void PrintSign (int num){
-        if (num==0){
-            System.out.println("The number 0 is zero.");
-        } else if (num<0){
-            System.out.println("The number " + num + " is negative." );
-        } else if (num>0){
-            System.out.println("The number " + num + " is positive." );
+        for (int a = n-1; a >=1; a--){
+            PrintLine(a);
         }
+
+}
+
+    static void PrintLine(int size) {
+        for (int i = 1; i <= size; i++){
+            System.out.print(i+ " ");
+        }
+        System.out.println();
     }
+
 }
 
