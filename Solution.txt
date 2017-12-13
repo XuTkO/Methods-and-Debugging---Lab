@@ -1,29 +1,32 @@
 import java.util.Scanner;
 
 public class Main {
+    static String drawing (String repeat, int count) {
+        String text = "";
+        for (int i = 1; i <= count; i++) {
+            text = text + repeat;
+        }
+        return text;
+    }
+
     public static void main(String[] args) {
         Scanner scanner = new Scanner(System.in);
+        int number = Integer.parseInt(scanner.nextLine());
+        String header = drawing("-",number*2);
+        System.out.println(header);
 
-        int n = Integer.parseInt(scanner.nextLine());
-        PrintTriangle(n);
-    }
 
-    static void PrintTriangle(int n) {
-        for (int i = 1; i <=n; i++){
-            PrintLine(i);
-    }
-        for (int a = n-1; a >=1; a--){
-            PrintLine(a);
+        for (int i=1; i<=number-2; i++){
+            System.out.print("-");
+            System.out.print(drawing("\\/",number-1));
+            System.out.println("-");
         }
+        System.out.println(header);
 
+    }
 }
 
-    static void PrintLine(int size) {
-        for (int i = 1; i <= size; i++){
-            System.out.print(i+ " ");
-        }
-        System.out.println();
-    }
 
-}
+
+
 
